@@ -7,7 +7,7 @@
     <meta name="description" content="初心易得, 始终难守">
     <link rel="icon" href="/zhou/favicon.ico">
     
-    <link rel="preload" href="/zhou/assets/css/0.styles.655fcde2.css" as="style"><link rel="preload" href="/zhou/assets/js/app.30702593.js" as="script"><link rel="preload" href="/zhou/assets/js/7.cbd51c16.js" as="script"><link rel="prefetch" href="/zhou/assets/js/10.2d1eb382.js"><link rel="prefetch" href="/zhou/assets/js/2.0debb4f5.js"><link rel="prefetch" href="/zhou/assets/js/3.5f64c64b.js"><link rel="prefetch" href="/zhou/assets/js/4.bf6769eb.js"><link rel="prefetch" href="/zhou/assets/js/5.4ac1a497.js"><link rel="prefetch" href="/zhou/assets/js/6.35832e81.js"><link rel="prefetch" href="/zhou/assets/js/8.16631fcf.js"><link rel="prefetch" href="/zhou/assets/js/9.a3abeea5.js">
+    <link rel="preload" href="/zhou/assets/css/0.styles.655fcde2.css" as="style"><link rel="preload" href="/zhou/assets/js/app.cd6fd9ab.js" as="script"><link rel="preload" href="/zhou/assets/js/7.e0c231af.js" as="script"><link rel="prefetch" href="/zhou/assets/js/10.2d1eb382.js"><link rel="prefetch" href="/zhou/assets/js/2.0debb4f5.js"><link rel="prefetch" href="/zhou/assets/js/3.5f64c64b.js"><link rel="prefetch" href="/zhou/assets/js/4.2e70b3b7.js"><link rel="prefetch" href="/zhou/assets/js/5.4ac1a497.js"><link rel="prefetch" href="/zhou/assets/js/6.35832e81.js"><link rel="prefetch" href="/zhou/assets/js/8.16631fcf.js"><link rel="prefetch" href="/zhou/assets/js/9.a3abeea5.js">
     <link rel="stylesheet" href="/zhou/assets/css/0.styles.655fcde2.css">
   </head>
   <body>
@@ -74,11 +74,25 @@
     <span class="token punctuation">}</span>
 </code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><div class="tip custom-block"><p class="custom-block-title">TIP</p> <p>方法定义成非静态的, 意味着需要创建对象才可使用<br>
 如果定义成静态的就不需要创建对象<br>
-ArrayTool.print(arr);</p></div></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+ArrayTool.print(arr);</p></div> <div class="language-java line-numbers-mode"><div class="highlight-lines"><div class="highlighted"> </div><div class="highlighted"> </div><br><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br><br></div><pre class="language-java"><code>       <span class="token keyword">private</span> ArrayTool <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+        <span class="token comment">//私有构造方法 目的是不让其它类创建本类对象, 直接类名 调用即可.</span>
+        <span class="token comment">// 求最大值</span>
+      <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span> getMax <span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> arr<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">int</span> max <span class="token operator">=</span> arr<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> arr<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span> max <span class="token operator">&lt;</span> arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            max <span class="token operator">=</span> arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> max<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+````'
+
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
         ←
         <a href="/zhou/java/1/" class="prev router-link-active">
           静态变量与非静态变量
         </a></span> <!----></p></div> </div> <!----></div></div>
-    <script src="/zhou/assets/js/app.30702593.js" defer></script><script src="/zhou/assets/js/7.cbd51c16.js" defer></script>
+    <script src="/zhou/assets/js/app.cd6fd9ab.js" defer></script><script src="/zhou/assets/js/7.e0c231af.js" defer></script>
   </body>
 </html>
