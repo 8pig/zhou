@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SQL | 8pig前端积累</title>
+    <meta name="description" content="初心易得, 始终难守">
+    <link rel="icon" href="/zhou/favicon.ico">
+    
+    <link rel="preload" href="/zhou/assets/css/0.styles.4038ceb2.css" as="style"><link rel="preload" href="/zhou/assets/js/app.c31914db.js" as="script"><link rel="preload" href="/zhou/assets/js/14.80edde30.js" as="script"><link rel="prefetch" href="/zhou/assets/js/10.1584a6d6.js"><link rel="prefetch" href="/zhou/assets/js/11.0129970c.js"><link rel="prefetch" href="/zhou/assets/js/12.abb334d8.js"><link rel="prefetch" href="/zhou/assets/js/13.d9baafc4.js"><link rel="prefetch" href="/zhou/assets/js/15.a71bc85a.js"><link rel="prefetch" href="/zhou/assets/js/16.19e6c027.js"><link rel="prefetch" href="/zhou/assets/js/17.d330dc92.js"><link rel="prefetch" href="/zhou/assets/js/18.3efc4641.js"><link rel="prefetch" href="/zhou/assets/js/19.c00e26f1.js"><link rel="prefetch" href="/zhou/assets/js/2.a3e62f69.js"><link rel="prefetch" href="/zhou/assets/js/20.b00f4079.js"><link rel="prefetch" href="/zhou/assets/js/21.b955dc58.js"><link rel="prefetch" href="/zhou/assets/js/22.ceef36ac.js"><link rel="prefetch" href="/zhou/assets/js/23.ad2da30c.js"><link rel="prefetch" href="/zhou/assets/js/24.79aa9042.js"><link rel="prefetch" href="/zhou/assets/js/3.58ebe204.js"><link rel="prefetch" href="/zhou/assets/js/4.9a8f63dc.js"><link rel="prefetch" href="/zhou/assets/js/5.d2aca9d2.js"><link rel="prefetch" href="/zhou/assets/js/6.f4611255.js"><link rel="prefetch" href="/zhou/assets/js/7.d84759ed.js"><link rel="prefetch" href="/zhou/assets/js/8.1ab9c361.js"><link rel="prefetch" href="/zhou/assets/js/9.5f6d0c36.js">
+    <link rel="stylesheet" href="/zhou/assets/css/0.styles.4038ceb2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/zhou/" class="home-link router-link-active"><!----> <span class="site-name">8pig前端积累</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/zhou/web/#个人积累" class="nav-link">前端</a></div><div class="nav-item"><a href="/zhou/java/" class="nav-link router-link-active">Java</a></div><div class="nav-item"><a href="http://152.136.92.239/#/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  个人网站
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">GitHub</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/8pig" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub地址
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/zhou/web/#个人积累" class="nav-link">前端</a></div><div class="nav-item"><a href="/zhou/java/" class="nav-link router-link-active">Java</a></div><div class="nav-item"><a href="http://152.136.92.239/#/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  个人网站
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">GitHub</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/8pig" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub地址
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/zhou/java/" class="sidebar-link">java 笔记</a></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>java基础</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>网络编程</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>MySQL</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/zhou/java/3/" class="sidebar-link">Mysql</a></li><li><a href="/zhou/java/3/1.html" class="active sidebar-link">SQL</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/zhou/java/3/1.html#sql" class="sidebar-link">SQL</a></li><li class="sidebar-sub-header"><a href="/zhou/java/3/1.html#语法" class="sidebar-link">语法</a></li><li class="sidebar-sub-header"><a href="/zhou/java/3/1.html#表创建" class="sidebar-link">表创建</a></li><li class="sidebar-sub-header"><a href="/zhou/java/3/1.html#表修改" class="sidebar-link">表修改</a></li><li class="sidebar-sub-header"><a href="/zhou/java/3/1.html#表查询" class="sidebar-link">表查询</a></li><li class="sidebar-sub-header"><a href="/zhou/java/3/1.html#表删除" class="sidebar-link">表删除</a></li></ul></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h2 id="sql"><a href="#sql" aria-hidden="true" class="header-anchor">#</a> SQL</h2> <pre><code>* 什么是SQL 
+    - 结构化查询语言
+    - 定义了操作所有关系型数据库的规则 
+</code></pre> <h2 id="语法"><a href="#语法" aria-hidden="true" class="header-anchor">#</a> 语法</h2> <pre><code>1. SQL 语句可以单行或者多行书写, 以分号结尾 
+2. 可使用空格和索引增强可读性 
+3. 建议关键字大写 
+</code></pre> <h2 id="表创建"><a href="#表创建" aria-hidden="true" class="header-anchor">#</a> 表创建</h2> <pre><code>* create table 表名(
+    列名1 数据类型1,
+    列名2 数据类型2,
+    ...
+    列名n 数据类型n
+);
+* 注意最后一列不需要加逗号 (,)
+* 数据类型
+    1. int 整数类型 
+        * age int,
+    2. double 小数
+        * scope double(5,2);
+    3. date 日期 只包含年月日 yyyy-MM-dd
+    4. datetime 日期 yyyy-MM-dd HH:mm:ss
+    5. timestamp 时间戳
+        * 如果不添加或者添加null 则自动添加当前系统时间
+    6. varchar 字符串
+        * name varchar(20)  最大20个字符
+create table student (
+    id int,
+    name varchar(32),
+    age int,
+    score double(4,1),
+    birthday date,
+    insert_time timestamp
+);
+- 复制表
+    * create table 表名 like 被复制的表名
+</code></pre> <h2 id="表修改"><a href="#表修改" aria-hidden="true" class="header-anchor">#</a> 表修改</h2> <pre><code>1. 修改表名 
+    * alter table 表名 rename to 新名
+2. 修改表字符集 
+    * show create table name;
+    * alter table 表名 character set uft-8;
+3. 添加一列
+    * alter table 表名 add 列名 类型;
+4. 修改列名称 类型 
+    * alter table 表名 change 列名 新列名 类型
+        - alter table student change sex gender varchar(20-)
+5. 删除列
+    * alter table 表名 drop 列名;
+</code></pre> <h2 id="表查询"><a href="#表查询" aria-hidden="true" class="header-anchor">#</a> 表查询</h2> <pre><code>* 查询某个数据库中所有表的名称
+show tablses
+* 查询表结构
+    * desc
+</code></pre> <h2 id="表删除"><a href="#表删除" aria-hidden="true" class="header-anchor">#</a> 表删除</h2> <pre><code>* drop table  if exists 表名;
+* drop table 表名;
+</code></pre></div> <div class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">5/14/2019, 10:55:29 PM</span></div></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/zhou/java/3/" class="prev router-link-active">
+          Mysql
+        </a></span> <!----></p></div> </div> <!----></div></div>
+    <script src="/zhou/assets/js/app.c31914db.js" defer></script><script src="/zhou/assets/js/14.80edde30.js" defer></script>
+  </body>
+</html>
