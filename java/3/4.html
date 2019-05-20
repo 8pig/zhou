@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>DQL | 8pig前端积累</title>
+    <meta name="description" content="初心易得, 始终难守">
+    <link rel="icon" href="/zhou/favicon.ico">
+    
+    <link rel="preload" href="/zhou/assets/css/0.styles.4038ceb2.css" as="style"><link rel="preload" href="/zhou/assets/js/app.960d3aa7.js" as="script"><link rel="preload" href="/zhou/assets/js/17.661caa31.js" as="script"><link rel="prefetch" href="/zhou/assets/js/10.5269fdcc.js"><link rel="prefetch" href="/zhou/assets/js/11.03b73c22.js"><link rel="prefetch" href="/zhou/assets/js/12.5aea6248.js"><link rel="prefetch" href="/zhou/assets/js/13.20e8d443.js"><link rel="prefetch" href="/zhou/assets/js/14.5866ff8f.js"><link rel="prefetch" href="/zhou/assets/js/15.a147cbd2.js"><link rel="prefetch" href="/zhou/assets/js/16.1bc6fbd5.js"><link rel="prefetch" href="/zhou/assets/js/18.16970d93.js"><link rel="prefetch" href="/zhou/assets/js/19.5d66bafc.js"><link rel="prefetch" href="/zhou/assets/js/2.0d286536.js"><link rel="prefetch" href="/zhou/assets/js/20.cdc8ce21.js"><link rel="prefetch" href="/zhou/assets/js/21.0627bb7c.js"><link rel="prefetch" href="/zhou/assets/js/22.76219cae.js"><link rel="prefetch" href="/zhou/assets/js/23.07f46b4e.js"><link rel="prefetch" href="/zhou/assets/js/24.2420d495.js"><link rel="prefetch" href="/zhou/assets/js/25.3d325e59.js"><link rel="prefetch" href="/zhou/assets/js/26.03466982.js"><link rel="prefetch" href="/zhou/assets/js/27.56fd6cef.js"><link rel="prefetch" href="/zhou/assets/js/28.704b3ad0.js"><link rel="prefetch" href="/zhou/assets/js/29.558742ed.js"><link rel="prefetch" href="/zhou/assets/js/3.c19d6b08.js"><link rel="prefetch" href="/zhou/assets/js/30.76995118.js"><link rel="prefetch" href="/zhou/assets/js/31.7a5551a6.js"><link rel="prefetch" href="/zhou/assets/js/4.937d5966.js"><link rel="prefetch" href="/zhou/assets/js/5.f1a2e620.js"><link rel="prefetch" href="/zhou/assets/js/6.8f88dd4c.js"><link rel="prefetch" href="/zhou/assets/js/7.3ae851c9.js"><link rel="prefetch" href="/zhou/assets/js/8.2a9b2876.js"><link rel="prefetch" href="/zhou/assets/js/9.39d913c1.js">
+    <link rel="stylesheet" href="/zhou/assets/css/0.styles.4038ceb2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/zhou/" class="home-link router-link-active"><!----> <span class="site-name">8pig前端积累</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/zhou/web/#个人积累" class="nav-link">前端</a></div><div class="nav-item"><a href="/zhou/java/" class="nav-link router-link-active">Java</a></div><div class="nav-item"><a href="http://152.136.92.239/#/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  个人网站
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">GitHub</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/8pig" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub地址
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/zhou/web/#个人积累" class="nav-link">前端</a></div><div class="nav-item"><a href="/zhou/java/" class="nav-link router-link-active">Java</a></div><div class="nav-item"><a href="http://152.136.92.239/#/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  个人网站
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">GitHub</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/8pig" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub地址
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/zhou/java/" class="sidebar-link">java 笔记</a></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>java基础</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>网络编程</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>MySQL</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/zhou/java/3/" class="sidebar-link">Mysql</a></li><li><a href="/zhou/java/3/1.html" class="sidebar-link">SQL</a></li><li><a href="/zhou/java/3/2.html" class="sidebar-link">表中数据</a></li><li><a href="/zhou/java/3/3.html" class="sidebar-link">查询</a></li><li><a href="/zhou/java/3/4.html" class="active sidebar-link">DQL</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/zhou/java/3/4.html#需要掌握的" class="sidebar-link">需要掌握的</a></li><li class="sidebar-sub-header"><a href="/zhou/java/3/4.html#查询语句" class="sidebar-link">查询语句</a></li></ul></li><li><a href="/zhou/java/3/5.html" class="sidebar-link">约束</a></li><li><a href="/zhou/java/3/6.html" class="sidebar-link">数据库的设计</a></li><li><a href="/zhou/java/3/7.html" class="sidebar-link">多表查询</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>JDBC</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="dql"><a href="#dql" aria-hidden="true" class="header-anchor">#</a> DQL</h1> <h2 id="需要掌握的"><a href="#需要掌握的" aria-hidden="true" class="header-anchor">#</a> 需要掌握的</h2> <pre><code>1. DQL:查询语句
+	1. 排序查询
+	2. 聚合函数
+	3. 分组查询
+	4. 分页查询 
+2. 约束
+3. 多表之间的关系
+4. 范式
+5. 数据库的备份和还原
+</code></pre> <h2 id="查询语句"><a href="#查询语句" aria-hidden="true" class="header-anchor">#</a> 查询语句</h2> <pre><code>	1. 排序查询
+		* 语法 order by 子句
+			* order by 排序字段1 排序方式1,排序字段2 排序方式2...
+		* 排序方式
+			* ASC 升序排量 默认的
+			* DESC 降序
+		SELECT * FROM 表名 ORDER BY 字段 DESC;
+		* 按照数学成绩排名, 如果数学成绩一样, 则按照英语排
+			* select * from student oder by match desc, english asc;
+	2. 聚合函数
+		* 将一列的数据作为一个整体 进行纵向的计算 
+		* count : 计算个数
+			* select count(列名) from 表名;
+		* max 计算最大值
+			*SELECT MAX(math) FROM student;
+		* min 计算最小值
+			* *SELECT MIN(math) FROM student;
+		* sum 求和
+			* SELECT SUM(math) FROM student;
+		* avg 计算平均值
+			* SELECT AVG(math) FROM student;
+		**聚合函数的计算 会排除非空 null 值 一般选为主键**
+		**select count(IFNULL(math,0)) FROM student;**
+		**select count(*) from student;**
+		**select count(id) from student;**
+
+	3. 分组查询
+		* 用来统计具有相同信息的
+		* 语法
+			* group by 分组字段
+			* 按照性别分组 分别查询男女同学的平均分
+			* select sex, AVG(math), COUNT(id) from student group by sex;
+	4. 分页查询 
+		* limit 开始的索引, 每页的条数;
+		* select * from student limt 0,3;
+		* 公式: 开始的索引 = (当前页码 - 1)* 每页显示的条数</code></pre></div> <div class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">5/16/2019, 10:06:45 PM</span></div></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/zhou/java/3/3.html" class="prev">
+          查询
+        </a></span> <span class="next"><a href="/zhou/java/3/5.html">
+          约束
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/zhou/assets/js/app.960d3aa7.js" defer></script><script src="/zhou/assets/js/17.661caa31.js" defer></script>
+  </body>
+</html>
